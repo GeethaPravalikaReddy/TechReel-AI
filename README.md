@@ -1,32 +1,37 @@
-# React + TypeScript + Vite
+# TechReel AI 🧠📱
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+### Turn your scrolling into smarter learning.
 
-Currently, two official plugins are available:
+TechReel AI is an AI-powered recommendation agent for students that analyzes their short-form content interactions, infers broader technology interests, and recommends engaging technology content that supports learning and career development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Instead of recommending content using simple keyword matching, TechReel AI looks at the **pattern across multiple Reels** to identify the student's underlying interest.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Live Demo
 
-## Expanding the Oxlint configuration
+**Live Prototype:** https://tech-reel-ai-ashy.vercel.app
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+**GitHub:** https://github.com/GeethaPravalikaReddy/TechReel-AI
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+---
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 🎯 Problem
+
+Students spend significant time scrolling through short-form content. Much of it may be entertainment with little educational or career value.
+
+The goal is **not to stop social-media usage**, but to make existing scrolling more useful.
+
+A student may interact with:
+
+- Java programming meme
+- Software-engineer lifestyle Reel
+- Coding interview joke
+- AI coding Reel
+- Laptop comparison
+- Networking content
+
+A shallow system may see:
+
+```text
+Java → Recommend another Java Reel
